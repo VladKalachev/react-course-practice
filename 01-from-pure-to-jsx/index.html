@@ -12,8 +12,18 @@
     <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> 
     <script>
+        const Book = () => {
+           return React.createElement('div', {}, [
+               React.createElement('h2', {}, "JS for beginners"),
+               React.createElement('p', {}, 2010),
+               React.createElement('p', {}, "900 rub"),
+           ]) 
+        }
         const App = () => {
-           return React.createElement("h1", { id: 'hello', className: "Name" }, "Hello Wordl")
+           return React.createElement('div', {}, [
+            React.createElement("h1", { id: 'hello', className: "Name" }, "Hello Wordl"),
+            React.createElement(Book)
+           ])
         }
 
         ReactDOM.render(React.createElement(App), document.getElementById('root'));
