@@ -14,7 +14,7 @@ const Book = ({name, year, price}) => {
 const App = () => {
   return (
     <div>
-      <h1>Hello Wordl!</h1>
+      <h1>Hello Wordl!!</h1>
       <Book name={'JS for beginners'} year={2018} price={1000}/>
       <Book name={'React'} year={2019} price={3000}/>
       <Book name={'Vue'} year={2020} price={2000}/>
